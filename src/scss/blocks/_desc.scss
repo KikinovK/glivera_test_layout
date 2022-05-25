@@ -1,0 +1,13 @@
+.desc {
+  @extend %global_flex_block_column_wrap_flex-start;
+  flex: 1 0 auto;
+  padding: 5rem;
+}
+
+.desc__title {
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 1.25;
+
+  margin: auto 0;
+}
