@@ -1,7 +1,13 @@
 .desc {
   @extend %global_flex_block_column_wrap_flex-start;
-  flex: 1 0 auto;
+  flex: 1 0 64rem;
   padding: 5rem;
+
+  background-color: $white;
+}
+
+.desc--dark {
+  background-color: $black_2;
 }
 
 .desc__title {
@@ -10,4 +16,22 @@
   line-height: 1.25;
 
   margin: auto 0;
+}
+
+.desc__text {
+  margin-bottom: 1.6rem;
+
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.desc__title--light,
+.desc__text--light {
+  color: $white;
+}
+
+.desc__wrap_text {
+  width: 46rem;
+  margin: auto 0 0 2.2rem;
 }

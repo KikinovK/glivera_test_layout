@@ -16,3 +16,19 @@ block content_block
 				class: 'section_bg',
 				img_class: 'section_bg__img'
 			})
+	section.section
+		.section__wrap
+			.desc.desc--dark
+				a.logo__link(href="#")
+					img.logo__img(src=`${assetsImage}/logo_white.svg`, alt="F")
+				h2.desc__title.desc__title--light!='Design, Build & <br>Sell your products'
+			+picture({
+				jpeg: true,
+				img: 'idea',
+				class: 'section_bg',
+				img_class: 'section_bg__img'
+			})
+			.desc.desc--dark
+				.desc__wrap_text
+					p.desc__text.desc__text--light Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt aliquet interdum massa in pulvinar ante. Tincidunt vivamus nulla magna semper lacus lacinia maecenas sed. Arcu commodo urna, phasellus neque.
+					p.desc__text.desc__text--light Tellus dictum elementum purus pharetra dolor sit volutpat pretium. Elementum vitae risus sit quis. Sed quis gravida aliquet sodales malesuada potenti venenatis eu imperdiet.
