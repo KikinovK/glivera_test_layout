@@ -10,9 +10,16 @@
   background-color: $black_2;
 }
 
+.desc--color {
+  background-color: $white_1;
+}
+
 .desc--rp {
-  align-content: normal;
   padding-right: 28rem;
+}
+
+.desc--an {
+  align-content: normal;
 }
 
 .desc__title {
