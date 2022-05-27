@@ -32,7 +32,7 @@ $page_width: 96rem;
 //---------------------------------------------layout###
 
 //---------------------------------------------global values
-$gl_radius:.5rem;
+$gl_radius: 0;
 //---------------------------------------------global values###
 
 //---------------------------------------------media points
@@ -47,12 +47,12 @@ $point_8: 320px;
 //---------------------------------------------media points
 
 //---------------------------------------------forms
-$input_height: 4rem;
-$input_offset: 0 2rem;
+$input_height: 4.6rem;
+$input_offset: 1rem 0;
 $input_font_size: $font_size_base;
-$input_border_color: #ccc;
-$input_border_color_active: $black;
-$input_placeholder_color: rgba($black, .4);
-$input_text_color: $black;
+$input_border_color: none;
+$input_border_color_active: none;
+$input_placeholder_color: $white;
+$input_text_color: $white;
 $input_radius: $gl_radius;
 //---------------------------------------------forms###

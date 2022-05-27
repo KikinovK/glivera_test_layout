@@ -1,9 +1,74 @@
 .footer {
 	width: 100%;
 	min-height: var(--height-footer);
+	height: 1rem;
 	flex: 0 0 auto;
 
-	font-size: 1rem;
+	padding: 5rem;
+
+	color: $white;
+
+	background-color: $black_2;
 
 	will-change: transform;
+}
+
+.footer__row {
+	@extend %global_flex_block_row_nowrap_space_between_stretch;
+
+	height: 100%;
+}
+
+.info {
+	@extend %global_flex_block_column_nowrap_flex-start;
+
+	width: 44rem;
+}
+
+.info__title {
+	margin: auto 0;
+
+	font-size: 5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.info__text {
+	margin-top: auto;
+
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.feedback {
+	@extend %global_flex_block_column_nowrap_flex-end;
+}
+
+.feedback__row {
+	@extend %global_flex_block_row_nowrap_flex-start;
+}
+
+.feedback__email {
+	margin-right: 6.3rem;
+}
+
+.feedback__btn {
+
+}
+
+.feedback_email__input {
+	@extend %form_el_default;
+
+	width: 36.4rem;
+
+	background-color: transparent;
+	border-bottom: 1px solid rgba($white, .3);
+
+}
+
+.feedback_btn__input {
+	@extend %form_el_default;
+	@extend .btn;
+
 }

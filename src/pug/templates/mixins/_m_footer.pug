@@ -1,2 +1,24 @@
 mixin footer
 	footer.footer
+		.footer__row
+			.info
+				.info__title We’ll be launching very soon!
+				.info__text So sign up to get notified as soon as we launch so you can start making your own custom products and selling them to the masses.
+			.feedback
+				form.feedback__form(action="" metod="")
+					.feedback__row
+						+form_input({
+							class: 'feedback_email__input',
+							block_class: 'feedback__email',
+							field_class: '',
+							type: 'email',
+							placeholder: 'Your Email Address',
+							value: ''
+						})
+						+form_input({
+							class: 'feedback_btn__input',
+							block_class: 'feedback__btn',
+							field_class: '',
+							type: 'submit',
+							value: 'Sign up'
+						})
