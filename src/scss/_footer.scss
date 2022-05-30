@@ -46,7 +46,7 @@
 }
 
 .feedback__row {
-	@extend %global_flex_block_row_nowrap_flex-start;
+	@extend %global_flex_block_row_nowrap_flex-start_flex-end;
 }
 
 .feedback__email {
@@ -70,5 +70,7 @@
 .feedback_btn__input {
 	@extend %form_el_default;
 	@extend .btn;
+
+	height: auto;
 
 }
