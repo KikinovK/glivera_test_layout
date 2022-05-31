@@ -8,11 +8,22 @@
 	font-size: 1rem;
 }
 
+.section--dark {
+	background-color: $black_2;
+}
+
 .section__wrap {
 	@extend %global_flex_block_row_nowrap_flex-start_stretch;
 
 	width: 100%;
 	height: 100%;
+}
+
+.section__wrap--cl {
+	@include bp($point_3, $point_6){
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
 }
 
 .section_bg {
@@ -24,6 +35,18 @@
 	height: 100%;
 
 	font-size: 0;
+
+	@include bp($point_3, $point_6) {
+		flex-basis: 80.58rem;
+
+		width: 80.58rem;
+	}
+}
+
+.section_bg--cl {
+	@include bp($point_3, $point_6) {
+		flex-grow: 1;
+	}
 }
 
 .section_bg__img {

@@ -4,6 +4,20 @@
   padding: 5rem;
 
   background-color: $white;
+
+  &:not(:first-of-type) {
+    order: 3;
+  }
+
+  @include bp($point_3, $point_6) {
+    flex-basis: 80.58rem;
+
+    padding: 11.5rem;
+
+    &:last-of-type {
+      order: 0;
+    }
+  }
 }
 
 .desc--dark {
@@ -15,19 +29,51 @@
 }
 
 .desc--rp {
-  padding-right: 28rem;
+
+  @include bp($point_2, min) {
+    padding-right: 28rem;
+  }
+
+  @include bp($point_3, $point_6) {
+    padding-right: 11.6rem;
+  }
 }
 
 .desc--an {
   align-content: normal;
 }
 
+.desc--cl {
+  @include bp($point_3, $point_6) {
+    width: calc(100% - 80.58rem);
+    height: 50%;
+
+    &:first-of-type {
+      padding-bottom: 0;
+    }
+  }
+}
+
 .desc__title {
+  display: block;
+  max-width: 60rem;
+
   font-weight: 500;
   font-size: 6rem;
   line-height: 1.25;
 
   margin: auto 0;
+
+  @include bp($point_3, $point_6) {
+    max-width: none;
+
+    font-size: 9.67rem;
+    line-height: 1.23;
+
+    .desc--cl & {
+      margin-bottom: 0;
+    }
+  }
 
   sup {
     position: relative;
@@ -39,12 +85,29 @@
   }
 }
 
+.desc__title--shot{
+  @include bp($point_2, min);
+
+  max-width: 50rem;
+
+  @include bp($point_3, $point_6) {
+    max-width: 87rem;
+  }
+}
+
 .desc__text {
   margin-bottom: 1.6rem;
 
   font-weight: 500;
-  font-size: 1.4rem;
   line-height: 1.7;
+
+  @include bp($point_2, min) {
+    font-size: 1.4rem;
+  }
+
+  @include bp($point_3, $point_6) {
+    font-size: 2.8rem;
+  }
 }
 
 .desc__title--light,
@@ -53,8 +116,15 @@
 }
 
 .desc__wrap_text {
-  width: 46rem;
   margin: auto 0 0 2.2rem;
+
+  @include bp($point_2, min) {
+    width: 46rem;
+  }
+
+  @include bp($point_3, $point_6) {
+    width: 82rem;
+  }
 }
 
 .desc__wrap_text--right {
@@ -63,4 +133,9 @@
 
 .desc__button {
   align-self: end;
+
+  @include bp($point_3, $point_6) {
+    order: 1;
+    margin-top: auto;
+  }
 }

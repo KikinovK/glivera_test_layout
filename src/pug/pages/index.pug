@@ -9,29 +9,29 @@ block content_block
 			.desc
 				a.logo__link(href="#")
 					img.logo__img(src=`${assetsImage}/logo_black.svg`, alt="F")
-				h2.desc__title!='Where imagination & <br>creativity come to life'
+				h2.desc__title!='Where imagination & creativity come to life'
 			+picture({
 				jpeg: true,
 				img: 'hero',
 				class: 'section_bg',
 				img_class: 'section_bg__img'
 			})
-	section.section
-		.section__wrap
-			.desc.desc--dark
+	section.section.section--dark
+		.section__wrap.section__wrap--cl
+			.desc.desc--dark.desc--cl
 				a.logo__link(href="#")
 					img.logo__img(src=`${assetsImage}/logo_white.svg`, alt="F")
-				h2.desc__title.desc__title--light!='Design, Build & <br>Sell your products'
-			+picture({
-				jpeg: true,
-				img: 'idea',
-				class: 'section_bg',
-				img_class: 'section_bg__img'
-			})
-			.desc.desc--dark
+				h2.desc__title.desc__title--light.desc__title--shot!='Design, Build & Sell your products'
+			.desc.desc--dark.desc--cl
 				.desc__wrap_text
 					p.desc__text.desc__text--light Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt aliquet interdum massa in pulvinar ante. Tincidunt vivamus nulla magna semper lacus lacinia maecenas sed. Arcu commodo urna, phasellus neque.
 					p.desc__text.desc__text--light Tellus dictum elementum purus pharetra dolor sit volutpat pretium. Elementum vitae risus sit quis. Sed quis gravida aliquet sodales malesuada potenti venenatis eu imperdiet.
+			+picture({
+				jpeg: true,
+				img: 'idea',
+				class: 'section_bg section_bg--cl',
+				img_class: 'section_bg__img'
+			})
 	section.section
 		.slider
 	section.section
@@ -45,7 +45,7 @@ block content_block
 			.desc.desc--rp.desc--an
 				.desc__button
 					a(href="").btn Visit Website
-				h2.desc__title!='Powered by <br> The Customiser<sup>TM</sup>'
+				h2.desc__title.desc__title--shot!='Powered by  The Customiser<sup>TM</sup>'
 				.desc__wrap_text.desc__wrap_text--right
 						p.desc__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu nisl morbi odio semper iaculis etiam elit. Arcu enim, et suspendisse condimentum quam elementum lacus, mi, a. Bibendum vitae in eget posuere vitae est. Diam pulvinar turpis rhoncus condimentum. Senectus nam sed etiam lectus mauris aliquet et. Vehicula mauris nullam placerat pretium eleifend.
 						p.desc__text Platea metus enim lectus euismod commodo dui. Viverra vehicula vitae mus euismod. Eros, amet consequat sem enim gravida non aliquet sagittis. Erat adipiscing pharetra gravida curabitur nibh. Lectus fermentum lorem quam phasellus dolor nunc, a purus viverra. Commodo pretium ut tincidunt dictumst commodo arcu suspendisse pretium erat.
@@ -54,7 +54,7 @@ block content_block
 	section.section
 		.section__wrap
 			.desc.desc--color
-				h2.desc__title!='A marketplace <br>like no other'
+				h2.desc__title.desc__title--shot!='A marketplace like no other'
 				.desc__wrap_text
 					p.desc__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt aliquet interdum massa in pulvinar ante. Tincidunt vivamus nulla magna semper lacus lacinia maecenas sed. Arcu commodo urna, phasellus neque.
 			+picture({
@@ -74,6 +74,6 @@ block content_block
 				img_class: 'section_bg__img'
 			})
 			.desc.desc--color.desc--an
-				h2.desc__title!='A place <br>for makers alike'
+				h2.desc__title.desc__title--shot!='A place for makers alike'
 				.desc__wrap_text.desc__wrap_text--right
 					p.desc__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt aliquet interdum massa in pulvinar ante. Tincidunt vivamus nulla magna semper lacus lacinia maecenas sed. Arcu commodo urna, phasellus neque.

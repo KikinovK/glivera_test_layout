@@ -1,17 +1,25 @@
 .btn {
   @extend %blue_btn_1;
 
-  padding: 1rem 2rem;
-
-  font-size: 14px;
   font-weight: 500;
   line-height: 1.7;
   color: $white_1;
 
   background: #657DE9;
   border-radius: 10rem;
-}
 
+  @include bp($point_2, min) {
+    padding: 1rem 2rem;
+
+    font-size: 1.4rem;
+  }
+
+  @include bp($point_3, $point_6) {
+    padding: 2.3rem 4.6rem;
+
+    font-size: 2.76rem;
+  }
+}
 .btn--fixed {
   position: fixed;
 }
