@@ -6,6 +6,7 @@ import pageWidgetInit from './dev_vendors/dev_widget';
 // ------------------- imports###
 
 // ------------------  import components
+import scroll from './components/scroll';
 // ------------------  import components###
 
 window.jQuery = $;
@@ -27,6 +28,7 @@ if (GLOBAL_VARS.projectDevStatus) {
 
 const readyFunc = () => {
 	console.log('ready');
+	scroll();
 };
 
 const loadFunc = () => {

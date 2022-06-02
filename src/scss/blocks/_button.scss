@@ -31,8 +31,9 @@
   }
 }
 .btn--fixed {
-  position: fixed;
+  @extend %transition_all;
 
+  position: fixed;
   z-index: 100;
 
   @include bp($point_2, min) {
@@ -49,6 +50,10 @@
     left: 15.4rem;
     bottom: 50%;
 
-    margin-bottom: -50%;
+    margin-bottom: -17.4rem;
   }
+}
+
+.btn--hiden {
+  left: -100%
 }
