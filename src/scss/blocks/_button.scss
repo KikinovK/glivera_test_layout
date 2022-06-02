@@ -32,4 +32,23 @@
 }
 .btn--fixed {
   position: fixed;
+
+  z-index: 100;
+
+  @include bp($point_2, min) {
+    left: 5rem;
+    bottom: 10rem;
+  }
+
+  @include bp($point_3, $point_6) {
+    left: 6rem;
+    bottom: 6rem;
+  }
+
+  @include bp($point_6 - 1) {
+    left: 15.4rem;
+    bottom: 50%;
+
+    margin-bottom: -50%;
+  }
 }
