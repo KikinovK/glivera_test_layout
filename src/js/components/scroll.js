@@ -22,8 +22,6 @@ const scroll = () => {
 	};
 	const hendlerScroll = () => {
 		const vh = getVh();
-		console.log(window.scrollY);
-		console.log(document.body.scrollHeight - footer.clientHeight);
 
 		if (window.scrollY + vh > document.body.scrollHeight - footer.clientHeight) {
 			btnScroll.classList.add('btn--hiden');

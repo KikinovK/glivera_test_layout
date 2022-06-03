@@ -1,0 +1,53 @@
+-
+  slides = [
+    {
+      title: 'Have A Go Hero’s'
+    },
+    {
+      title: 'Artists',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt aliquet interdum massa in pulvinar ante. Tincidunt vivamus nulla magna semper lacus lacinia maecenas sed. Arcu commodo urna, phasellus neque.'
+    },
+    {
+      title: 'Brands'
+    },
+    {
+      title: 'Makers'
+    },
+    {
+      title: 'Have A Go Hero’s'
+    },
+    {
+      title: 'Artists',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt aliquet interdum massa in pulvinar ante. Tincidunt vivamus nulla magna semper lacus lacinia maecenas sed. Arcu commodo urna, phasellus neque.'
+    },
+    {
+      title: 'Brands'
+    },
+    {
+      title: 'Makers'
+    }
+  ]
+
+.accounts
+  .accounts__slider.accountsSlider
+    each slide, index in slides
+      .accounts__slide
+        +picture({
+          img: `accounts/0${index+1}`,
+          class: 'accounts__pic',
+          img_class: 'accounts__img',
+          alt: slide.title
+        })
+        .accounts__slide_in
+          .accoutts__caption
+            if slide.title
+              .accounts__title= slide.title
+            if slide.text
+              .accounts__text= slide.text
+  .accounts__scrollbar.accountsScrollbar
+    .accounts__drag.accountsDrag
+      .accounts__nav_btn.btn--drag.accountsSliderArrowPrev
+        +icon('arr_left', 'icon--size_mod')
+      .btn.btn--drag Drag
+      .accounts__nav_btn.btn--drag.accountsSliderArrowNext
+        +icon('arr_right', 'icon--size_mod')

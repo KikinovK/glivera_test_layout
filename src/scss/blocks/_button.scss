@@ -57,3 +57,13 @@
 .btn--hiden {
   left: -100%
 }
+
+.btn--drag {
+  color: $black_1;
+  background-color: $white;
+}
+
+.btn--disabled {
+  color: $grey;
+  background-color: $grey_1;
+}

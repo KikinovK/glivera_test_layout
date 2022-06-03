@@ -1,0 +1,93 @@
+.accounts {
+  position: relative;
+
+  height: 100%;
+}
+
+.accounts__slider {
+  height: 100%;
+}
+
+.accounts__slide {
+  position: relative;
+
+  height: 100%;
+}
+
+.accounts__pic {
+  width: 100%;
+  height: 100%;
+}
+
+.accounts__img {
+  @extend %cover_img;
+}
+
+.accounts__slide_in {
+  @extend %global_flex_block_column_nowrap_center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 5rem;
+}
+
+.accoutts__caption {
+  // margin: auto 0;
+}
+
+.accounts__title {
+  margin-bottom: 4rem;
+
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 1.25;
+  color: $white;
+}
+
+.accounts__text {
+  width: 31.2rem;
+
+  font-weight: 500;
+  font-size: 1.44rem;
+  line-height: 1.7;
+  color: $white;
+}
+
+.accounts__scrollbar {
+  position: absolute;
+
+  left: 63%;
+  right: 5%;
+  bottom: 25%;
+
+  height: 0;
+
+  z-index: 200;
+}
+.accounts__drag {
+  @extend %global_flex_block_row_nowrap_flex-start_center;
+
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.accounts__nav_btn {
+  width: 2rem;
+  height: 2rem;
+
+  padding: .4rem;
+
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: .6rem;
+  }
+
+  &:not(:first-child) {
+    margin-left: .6rem;
+  }
+}
