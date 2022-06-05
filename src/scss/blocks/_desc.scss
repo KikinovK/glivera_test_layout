@@ -77,6 +77,7 @@
   }
 
   @include bp($point_3, $point_6) {
+    flex-basis: auto;
     width: calc(100% - 80.58rem);
     height: 50%;
   }
