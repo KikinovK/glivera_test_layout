@@ -39,6 +39,10 @@
   @include bp($point_3, $point_6) {
     padding: 11.6rem;
   }
+
+  @include bp($point_6 - 1) {
+    padding: 15.4rem;
+  }
 }
 
 .accoutts__caption {
@@ -61,6 +65,13 @@
 
     font-size: 8.2rem;
     line-height: 1.27;
+  }
+
+  @include bp($point_6 - 1) {
+    margin-bottom: 15.4rem;
+
+    font-size: 13.4rem;
+    line-height: 1.38;
   }
 }
 
@@ -85,6 +96,13 @@
 
     font-size: 3.2rem;
   }
+
+  @include bp($point_6 - 1) {
+    width: 100%;
+
+    font-size: 5.6rem;
+    line-height: 1.8;
+  }
 }
 
 .accounts__scrollbar {
@@ -102,6 +120,7 @@
     display: none;
   }
 }
+
 .accounts__drag {
   @extend %global_flex_block_row_nowrap_flex-start_center;
 
