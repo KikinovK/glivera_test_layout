@@ -1,6 +1,7 @@
 .accounts {
   position: relative;
 
+  width: 100%;
   height: 100%;
 }
 
@@ -31,29 +32,59 @@
   right: 0;
   bottom: 0;
 
-  padding: 5rem;
+  @include bp($point_2, min) {
+    padding: 5rem;
+  }
+
+  @include bp($point_3, $point_6) {
+    padding: 11.6rem;
+  }
 }
 
 .accoutts__caption {
-  // margin: auto 0;
+
 }
 
 .accounts__title {
-  margin-bottom: 4rem;
-
   font-weight: 500;
-  font-size: 4rem;
-  line-height: 1.25;
   color: $white;
+
+  @include bp($point_2, min) {
+    margin-bottom: 4rem;
+
+    font-size: 4rem;
+    line-height: 1.25;
+  }
+
+  @include bp($point_3, $point_6) {
+    margin-bottom: 10.6rem;
+
+    font-size: 8.2rem;
+    line-height: 1.27;
+  }
 }
 
 .accounts__text {
-  width: 31.2rem;
 
   font-weight: 500;
-  font-size: 1.44rem;
-  line-height: 1.7;
+
   color: $white;
+
+  @include bp($point_2, min) {
+    width: 31.2rem;
+
+    font-size: 1.4rem;
+  }
+
+  @include bp($point_6, min) {
+    line-height: 1.7;
+  }
+
+  @include bp($point_3, $point_6) {
+    width: 78.8rem;
+
+    font-size: 3.2rem;
+  }
 }
 
 .accounts__scrollbar {
@@ -66,6 +97,10 @@
   height: 0;
 
   z-index: 200;
+
+  @include bp($point_3) {
+    display: none;
+  }
 }
 .accounts__drag {
   @extend %global_flex_block_row_nowrap_flex-start_center;
@@ -73,6 +108,10 @@
   position: relative;
   left: 0;
   top: 0;
+
+  @include bp($point_3) {
+    display: none;
+  }
 }
 
 .accounts__nav_btn {

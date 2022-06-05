@@ -19,7 +19,7 @@ const accountsSlider = () => {
 			scrollbar: {
 				el: '.accountsScrollbar',
 				draggable: true,
-				// snapOnRelease: true,
+				snapOnRelease: true,
 				dragClass: 'accountsDrag',
 				dragSize: 100,
 			},
@@ -28,15 +28,13 @@ const accountsSlider = () => {
 				nextEl: '.accountsSliderArrowNext',
 				disabledClass: 'btn--disabled',
 			},
-			pagination: {
-				el: '.slider_dots',
-				type: 'bullets',
-				clickable: true,
-			},
 
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
+				},
+				480: {
+					slidesPerView: 1.22,
 				},
 				1023: {
 					slidesPerView: 3.27,
