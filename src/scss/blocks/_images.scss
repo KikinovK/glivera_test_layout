@@ -4,11 +4,17 @@
   @include bp($point_2, min) {
     padding-left: 12.8rem;
   }
+  @include bp($point_3, $point_6) {
+    padding-left: 11.6rem;
+  }
 }
 
 .images {
   margin: auto 0;
-  max-height: 64.4rem;
+
+  @include bp($point_2, min) {
+    max-height: 64.4rem;
+  }
 }
 
 .images__slider {
@@ -16,13 +22,20 @@
 }
 
 .images__slide {
-  @include bp($point_2, min) {
 
     &:not(bar){
       width: auto;
     }
+
+  @include bp($point_2, min) {
     &:not(:last-child) {
       margin-right: 2rem;
+    }
+  }
+
+  @include bp($point_3, $point_6) {
+    &:not(:last-child) {
+      margin-right: 1.4rem;
     }
   }
 }
@@ -41,6 +54,10 @@
 .images_bottom {
   @include bp($point_2, min) {
     padding: 6rem 12.8rem 0 0rem;
+  }
+
+  @include bp($point_3, $point_6) {
+    padding: 7.8rem 11.6rem 0 0;
   }
 }
 .images_bottom__scrollbar {

@@ -29,7 +29,7 @@ const imagesOnScroll = () => {
 					slidesPerView: 1.2,
 				},
 				480: {
-					slidesPerView: 1.22,
+					slidesPerView: 'auto',
 				},
 				1023: {
 					slidesPerView: 'auto',
