@@ -8,6 +8,7 @@ import pageWidgetInit from './dev_vendors/dev_widget';
 // ------------------  import components
 import scroll from './components/scroll';
 import accountsSlider from './components/accountsSlider';
+import imagesOnScroll from './components/imagesOnScroll';
 // ------------------  import components###
 
 window.jQuery = $;
@@ -34,6 +35,7 @@ const readyFunc = () => {
 
 const loadFunc = () => {
 	accountsSlider();
+	imagesOnScroll();
 	console.log('page load');
 };
 
