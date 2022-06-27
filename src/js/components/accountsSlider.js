@@ -24,8 +24,8 @@ const accountsSlider = () => {
 				dragSize: 100,
 			},
 			navigation: {
-				prevEl: '.accountsSliderArrowPrev',
-				nextEl: '.accountsSliderArrowNext',
+				prevEl: '.accountsSliderArrowNext',
+				nextEl: '.accountsSliderArrowPrev',
 				disabledClass: 'btn--disabled',
 			},
 
