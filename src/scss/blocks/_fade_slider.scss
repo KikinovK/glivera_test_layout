@@ -1,0 +1,82 @@
+.fade {
+  position: relative;
+  height: 100%;
+}
+
+.fade__slider {
+  height: 100%;
+}
+
+.fade__slide {
+
+}
+
+.fade__nav {
+  @include flex_block(row, nowrap, flex-start, center, center);
+  position: absolute;
+
+
+  z-index: 100;
+
+  @include bp($point_2, min) {
+    right: 45rem;
+    bottom: 2rem;
+  }
+
+  @include bp($point_3, $point_6 - 1) {
+    left: 11.6rem;
+    bottom: 4.6rem;
+  }
+
+  @include bp($point_6 - 1) {
+    left: 15rem;
+    bottom: 170rem;
+  }
+}
+
+.fade__nav_btn {
+  color: $white;
+
+  border-radius: 50%;
+  background-color: $blue;
+
+  cursor: pointer;
+
+  @include bp($point_2, min) {
+    width: 4rem;
+    height: 4rem;
+
+    padding: 1.4rem;
+
+    &:not(:last-child) {
+      margin-right: 3.6rem;
+    }
+  }
+
+  @include bp($point_3, $point_6) {
+    width: 9.2rem;
+    height: 9.2rem;
+
+    padding: 3.2rem;
+
+    &:not(:last-child) {
+      margin-right: 7.8rem;
+    }
+  }
+
+  @include bp($point_6 - 1) {
+    width: 20.4rem;
+    height: 20.4rem;
+
+    padding: 7.2rem;
+
+    &:not(:last-child) {
+      margin-right: 17.4rem;
+    }
+  }
+}
+
+.fade__nav_btn--disabled {
+  opacity: 0.5;
+  cursor:auto;
+}

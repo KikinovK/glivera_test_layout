@@ -9,6 +9,7 @@ import pageWidgetInit from './dev_vendors/dev_widget';
 import scroll from './components/scroll';
 import accountsSlider from './components/accountsSlider';
 import imagesOnScroll from './components/imagesOnScroll';
+import fadeSlider from './components/fadeSlider';
 // ------------------  import components###
 
 window.jQuery = $;
@@ -36,6 +37,7 @@ const readyFunc = () => {
 const loadFunc = () => {
 	accountsSlider();
 	imagesOnScroll();
+	fadeSlider();
 	console.log('page load');
 };
 
