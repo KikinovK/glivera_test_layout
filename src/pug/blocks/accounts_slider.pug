@@ -46,8 +46,8 @@
               .accounts__text= slide.text
   .accounts__scrollbar.accountsScrollbar
     .accounts__drag.accountsDrag
-      button.accounts__nav_btn.btn--drag.accountsSliderArrowPrev
+      button.accounts__nav_btn.btn--drag.accountsSliderArrowNext(type='button')
         +icon('arr_left', 'icon--size_mod')
-      button.btn.btn--drag Drag
-      button.accounts__nav_btn.btn--drag.accountsSliderArrowNext
+      button.btn.btn--drag(type='button') Drag
+      button.accounts__nav_btn.btn--drag.accountsSliderArrowPrev(type='button')
         +icon('arr_right', 'icon--size_mod')
