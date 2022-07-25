@@ -139,9 +139,12 @@
   width: 2rem;
   height: 2rem;
 
-  padding: .4rem;
+  padding: .6rem;
 
   border-radius: 50%;
+
+  // pointer-events: none;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-right: .6rem;

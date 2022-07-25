@@ -23,7 +23,7 @@
     bottom: 2rem;
   }
 
-  @include bp($point_3, $point_6 - 1) {
+  @include bp($point_3, $point_6) {
     left: 11.6rem;
     bottom: 4.6rem;
   }

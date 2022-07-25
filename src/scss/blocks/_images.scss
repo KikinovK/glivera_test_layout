@@ -20,11 +20,11 @@
   }
 
   @include bp($point_3, $point_6) {
-    max-height: 164rem;;
+    max-height: 75.2rem;;
   }
 
   @include bp($point_6 - 1) {
-    max-height: 474rem;
+    max-height: 112.6rem;
   }
 }
 
@@ -82,19 +82,28 @@
   }
 }
 .images_bottom__scrollbar {
+
+  background-color: $grey_2;
+
   @include bp($point_2, min) {
     height: 5px;
+  }
 
-    background-color: $grey_2;
+  @include bp($point_3) {
+    height: 3px;
   }
 }
 
 .images_bottom__drag {
-  height: 5px;
+  height: 100%;
 
   background-color: $color_link_base;
 
   cursor: pointer;
+
+  @include bp($point_2, min) {
+
+  }
 
   &:hover {
     background-color: darken($color_link_base, 10%);

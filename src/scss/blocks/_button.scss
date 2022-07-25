@@ -66,4 +66,8 @@
 .btn--disabled {
   color: $grey;
   background-color: $grey_1;
+
+  &:not(bar) {
+    cursor: auto;
+  }
 }

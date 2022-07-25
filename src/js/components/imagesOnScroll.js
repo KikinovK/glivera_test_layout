@@ -21,19 +21,17 @@ const imagesOnScroll = () => {
 				draggable: true,
 				snapOnRelease: true,
 				dragClass: 'imagesOnScrollDrag',
-				dragSize: 353,
 			},
 
 			breakpoints: {
 				320: {
-					slidesPerView: 1.2,
+					slidesPerView: 'auto',
 				},
 				480: {
 					slidesPerView: 'auto',
 				},
 				1023: {
 					slidesPerView: 'auto',
-					// spaceBetween: 20,
 				},
 			},
 
