@@ -1,3 +1,8 @@
+# Educational project
+
+## [demo](https://kikinovk.github.io/glivera_test_layout/)
+
+
 # Welcome to glivera-webpack-boilerplate
 ## Get started
 
@@ -82,4 +87,3 @@ readme.md                    # Documentation template
 | Sass files                    | _your_file.scss       |                     |
 | Pug mixin (pug/templates)     | _m_your_component.pug | *name of component* |
 | JS component (js/components)  | nameOfYourFunction.js | *name of function*  |
-
